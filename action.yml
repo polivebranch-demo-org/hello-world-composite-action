@@ -29,6 +29,12 @@ runs:
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
+    - name: pwd and ls
+      run: |
+        pwd
+        ls -la
+      shell: bash
+
     - name: Run goodbye.sh
       run: ./scripts/goodbye.sh
       shell: bash
