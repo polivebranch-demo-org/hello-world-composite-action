@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - id: foo
-        uses: polivebranch-demo-org/hello-world-composite-action@v1
+        uses: polivebranch-demo-org/hello-world-composite-action/.github/actions/hello-world@v1
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number "$RANDOM_NUMBER"
